@@ -452,10 +452,10 @@
 
             <div class="mail-footer">
                 <p class="footer-item">Підпишіться на розсилку</p>
-                <div class="footer-mail-form">
-                    <form name="mail" autocomplete="on" novalidate>
-                        <label class="mail-footer-label">
-                            <input type="email" name="email" placeholder="E-mail">
+                <!-- <div class="footer-mail-form"> -->
+                    <form class="footer-mail-form" name="mail" autocomplete="on" novalidate>
+                        <label class="mail-footer-label" for="mail">
+                            <input type="email" name="email" placeholder="E-mail" id="mail">
                         </label>
                         <button type="submit" class="btn-mail-send">
                             <span class="text-send">Підписатися</span>
@@ -464,7 +464,7 @@
                             </svg>
                         </button>
                     </form>
-                </div>
+                <!-- </div> -->
 
             </div>
         </div>
@@ -477,7 +477,59 @@
                   <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
+            
+            
+            <p class="modal-text">Залиште свої дані, ми вам передзвонимо</p>
+            <form class="modal-form">
+
+                    <label class="label-form" for="user-name">Ім'я</label>
+                    <div class="input-icon">
+                        <input class="form-input" type="text" name="user-name" id="user-name" autofocus>
+                        <svg class="user-name-icon" width="18" height="18">
+                        <use href="./images/icons.svg#icon-name"></use>
+                        </svg>
+                    </div>
+
+                    
+                    <label class="label-form" for="user-tel">Телефон</label>
+                    <div class="input-icon">
+                        <input class="form-input" type="tel" name="user-tel" id="user-tel" autofocus>
+                        <svg class="user-name-icon" width="18" height="18">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                         </div>
+
+                    
+                    <label class="label-form" for="user-email">Пошта</label>
+                    <div class="input-icon">
+                        <input class="form-input" type="email" name="user-email" id="user-email" autofocus>
+                        <svg class="user-name-icon" width="18" height="18">
+                        <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div> 
+
+                    <label class="label-form" for="user-comment">Коментар</label>
+                    <textarea class="textarea-form" name="comment" id="user-comment" rows="6" placeholder="Введіть текст"></textarea>
+
+
+                    
+    
+                    <div class="agree-form">
+                        <label class="label-form">
+                        <input class="checkbox" type="checkbox" name="agree" value="agree">
+                    <span class="icon-checkbox"></span>
+                        </label>
+                        <span class="agree-text">Погоджуюся з розсилкою та приймаю <a href="" target="_blank">Умови договору</a></span> 
+                    </div>     
+                    
+
+                    <button class="button--modal-form" type="submit">Відправити</button>
+                                   
+
+            </form>
         </div>
+
+        
     </div>
 
     <script src="./js/modal.js"></script>
