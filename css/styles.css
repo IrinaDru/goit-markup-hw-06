@@ -931,6 +931,10 @@ body {
         margin-right: 10px;
     }
 
+    .mail-footer-label {
+        margin-right: 12px;
+    }
+
     .mail-footer-label input {
         padding-top: 15px;
         padding-bottom: 15px;
@@ -939,7 +943,7 @@ body {
         height: 50px;
 
         background-color: inherit;
-        margin-right: 12px;  
+          
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px; 
@@ -969,7 +973,6 @@ body {
 
    .modal-text {    
     color: #212121;
-    
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
@@ -977,6 +980,16 @@ body {
     letter-spacing: 0.03em;
 
     margin-bottom: 12px;
+   }
+
+   .modal-form-element {
+    
+    margin-bottom: 10px;
+   }
+
+   .modal-form-textarea {
+
+    margin-bottom: 20px;
    }
 
    .form-input {
@@ -995,9 +1008,8 @@ body {
    }
  
    .label-form {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
+   
     margin-bottom: 4px;
     font-weight: 400;
     font-size: 12px;
@@ -1005,19 +1017,22 @@ body {
     letter-spacing: 0.01em;
    }
 
-   .label-form:nth-last-child(-n+2) {
-    margin-bottom: 0;
-   }   
+   .label-form-agree {
+    display: inline-flex;
+    align-items: center;
+   }
+ 
 
    .input-icon input {
     min-height: 40px;
     padding-left: 42px;
-    margin: -1px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
    }
 
    .input-icon {
     position: relative;
-    margin-bottom: 10px;
    }
 
    .user-name-icon {
@@ -1053,9 +1068,9 @@ body {
 
   .textarea-form {
     padding: 12px 16px;
-    margin-bottom: 20px;
+    
     font-weight: 400;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 14px;
     letter-spacing: 0.01em;
     outline: transparent;
@@ -1082,6 +1097,18 @@ body {
     margin-bottom: 30px;
    }
 
+   .agree-text {
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+   }
+
+   .agree-text a {
+    color: var(--accent-color);
+   }
+
    .checkbox {
     /* -webkit-appearance: none;
     -moz-appearance: none;
@@ -1096,17 +1123,18 @@ body {
     overflow: hidden;
    }
  
-   .button--modal-form {
+   .button-modal-form {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    min-width: 200px;
-    min-height: 50px;
+    width: 200px;
+    height: 50px;
     color: var(--hero-text-color);
     background-color: var(--accent-color);
     border: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    cursor: pointer;
    }
 
    .button--modal-form:hover,
@@ -1135,12 +1163,7 @@ body {
     background-image: url('../images/icon-check.svg');
    }
 
-   .agree-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-   }
+
 
    
    
